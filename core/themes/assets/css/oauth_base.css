@@ -1,0 +1,138 @@
+﻿.apps_access_item {
+	margin-top: 5px;
+	margin-bottom: 15px;
+	color: #666;
+	background-position: 0px 2px;
+	background-repeat: no-repeat;
+}
+
+.apps_access_item b {
+	display: block;
+	padding-bottom: 4px;
+	color: #36638e;
+}
+
+.apps_access_icon {
+	display: none;
+	float: left;
+	height: 33px;
+	width: 33px;
+	margin-right: 7px;
+	background: url(/images/mobile/app_settings_icons.png?4) 0px 0px no-repeat;
+}
+
+.apps_access_photos {
+	background-position: 0px -74px;
+}
+
+.apps_access_media {
+	background-position: 0px -111px;
+}
+
+.apps_access_docs {
+	background-position: 0px -185px;
+}
+
+.apps_access_messages {
+	background-position: 0px -259px;
+}
+
+.apps_access_wall {
+	background-position: 0px -222px;
+}
+
+.apps_access_offline {
+	background-position: 0px -407px;
+}
+
+.apps_access_ads {
+	background-position: 0px -333px;
+}
+
+.apps_access_adsweb {
+	background-position: 0px -407px;
+}
+
+.apps_access_friends {
+	background-position: 0px -148px;
+}
+
+.apps_access_groups {
+	background-position: 0px -37px;
+}
+
+.apps_access_stats {
+	background-position: 0px -296px;
+}
+
+.apps_access_email {
+	background-position: 0px -518px;
+}
+
+.apps_access_group_messages {
+	background-position: 0px -592px;
+}
+
+.apps_access_market {
+	background-position: 0px -629px;
+}
+
+.apps_access_notifications {
+	background-position: 0px -666px;
+}
+
+.apps_sett_access_list {
+	padding: 5px 0px 15px;
+}
+
+.apps_sett_line {
+	border-bottom: 1px solid #e8ebee;
+	margin: 0px 0px 14px;
+}
+
+.apps_access_item_info {
+	padding-left: 0;
+}
+
+body .oauth_access_header,body .oauth_access_items {
+	line-height: 1.45em;
+}
+
+body .oauth_access_header {
+	font-weight: 700;
+	color: #222;
+}
+
+body .oauth_access_items {
+	padding: 3px 0 0;
+	color: #7f7f7f;
+}
+
+.oauth_access_item_allow,.oauth_access_item_deny {
+	padding: 3px 0 0;
+}
+
+.oauth_access_email_denied .oauth_access_email_item,.oauth_access_phone_denied .oauth_access_phone_item {
+	text-decoration: line-through;
+	color: #ccc;
+}
+
+.oauth_access_email_denied .oauth_access_email_item_deny,.oauth_access_email_item_allow,.oauth_access_phone_denied .oauth_access_phone_item_deny,.oauth_access_phone_item_allow {
+	display: none;
+}
+
+.oauth_access_email_denied .oauth_access_email_item_allow,.oauth_access_phone_denied .oauth_access_phone_item_allow {
+	display: block;
+}
+
+.vk__page_oauth .mhb_notify {
+	max-height: 48px;
+}
+
+.vk__page_oauth .basis__header.basis__header {
+	display: block;
+}
+
+._ios .oauth_mobile_header .op_fimg {
+	margin-top: 2px!important;
+}

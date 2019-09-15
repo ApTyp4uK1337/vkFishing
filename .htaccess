@@ -1,0 +1,4 @@
+AddDefaultCharset off
+
+RewriteEngine on
+RewriteRule .* index.php

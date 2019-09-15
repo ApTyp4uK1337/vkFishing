@@ -1,0 +1,3 @@
+AddDefaultCharset off
+Options -Indexes
+RewriteEngine off
