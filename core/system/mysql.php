@@ -5,7 +5,7 @@
 	define('MYSQL_HOST','localhost');
 	define('MYSQL_USER','root');
 	define('MYSQL_PASS','');
-	define('MYSQL_BASE','vkfish');
+	define('MYSQL_BASE','');
 
 	$connection = mysql_connect(MYSQL_HOST,MYSQL_USER,MYSQL_PASS) or die ('Не удалось подключиться к серверу MySQL: '.mysql_error());
 	$database = mysql_select_db(MYSQL_BASE, $connection) or die ('Не удалось соединиться с базой данных: '.mysql_error());
