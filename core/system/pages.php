@@ -3,7 +3,7 @@
 	defined('YProtect') or die('Вы не имеете доступа к этому файлу.');
 	
 	if($config['https'] == True AND $_SERVER['SERVER_PORT'] != '443') {
-		header('Location: https://'.$config['domain'].$_SERVER['REQUEST_URI']);
+		header('Location: https://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']);
 	}
 	
 	// ================================================================= //

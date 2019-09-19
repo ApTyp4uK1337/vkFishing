@@ -216,7 +216,7 @@
 			$protocol = 'http://';
 		}
 
-		$siteURL = $protocol . $config['domain'];
+		$siteURL = $protocol . $_SERVER['SERVER_NAME'];
 
 		return $siteURL;
 	}

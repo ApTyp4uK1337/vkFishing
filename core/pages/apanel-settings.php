@@ -126,7 +126,7 @@
 								<div class="form-group">
 									<div class="row row-sm">
 										<div class="col-sm">
-											<input type="text" name="domain" class="form-control" value="<?php echo $config['domain']; ?>" placeholder="Введите домен сайта" required>
+											<input type="text" name="domain" class="form-control" value="<?php echo $_SERVER['SERVER_NAME']; ?>" placeholder="Введите домен сайта" required>
 										</div>
 									</div>
 								</div>
