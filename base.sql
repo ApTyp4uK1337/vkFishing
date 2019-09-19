@@ -60,7 +60,6 @@ CREATE TABLE `config` (
   `id` int(11) NOT NULL,
   `status` int(1) NOT NULL,
   `https` int(1) NOT NULL,
-  `domain` varchar(32) NOT NULL,
   `proxy` varchar(24) NOT NULL,
   `dark_theme` int(1) NOT NULL DEFAULT '0',
   `preloader` int(1) NOT NULL DEFAULT '0',
@@ -78,8 +77,8 @@ CREATE TABLE `config` (
 -- Дамп данных таблицы `config`
 --
 
-INSERT INTO `config` (`id`, `status`, `https`, `domain`, `proxy`, `dark_theme`, `preloader`, `access_token`, `vkapiVersion`, `group_id`, `mailing`, `tg_bot`, `tg_chat_id`, `tg_token`, `display_errors`) VALUES
-(1, 1, 0, 'yourdomain.com', '127.0.0.1:8080', 1, 1, 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx', '5.101', '123456', 0, 0, '', '', 0);
+INSERT INTO `config` (`id`, `status`, `https`, `proxy`, `dark_theme`, `preloader`, `access_token`, `vkapiVersion`, `group_id`, `mailing`, `tg_bot`, `tg_chat_id`, `tg_token`, `display_errors`) VALUES
+(1, 1, 0, '127.0.0.1:8080', 1, 1, 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx', '5.101', '123456', 0, 0, '', '', 0);
 
 -- --------------------------------------------------------
 
