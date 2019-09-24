@@ -16,8 +16,7 @@
 			$admin = mysql_fetch_assoc(mysql_query("SELECT `login`,`dark_theme`,`preloader` FROM `users` WHERE `id` = '".$_COOKIE['uid']."'"));
 			
 			if(isset($_POST['update_settings'])) {
-				if(isset($_POST['domain']) AND isset($_POST['access_token']) AND isset($_POST['vkapiVersion'])) {
-					$domain = trim($_POST['domain']);
+				if(isset($_POST['access_token']) AND isset($_POST['vkapiVersion'])) {
 					$access_token = trim($_POST['access_token']);
 					$vkapiVersion = trim($_POST['vkapiVersion']);
 					$proxy = trim($_POST['proxy']);
@@ -33,7 +32,7 @@
 					}
 					
 					$query = "UPDATE `config`
-							  SET `domain` = '$domain', `access_token` = '$access_token', `vkapiVersion` = '$vkapiVersion', `proxy` = '$proxy', `group_id` = '$group_id', `mailing` = '$mailing'
+							  SET `access_token` = '$access_token', `vkapiVersion` = '$vkapiVersion', `proxy` = '$proxy', `group_id` = '$group_id', `mailing` = '$mailing'
 							 ";
 					$res = mysql_query($query) or die (mysql_error());
 					
@@ -122,14 +121,6 @@
 					<div class="card">
 						<div class="card-body pd-30">
 							<form method="POST">
-								<span>Домен сайта</span>
-								<div class="form-group">
-									<div class="row row-sm">
-										<div class="col-sm">
-											<input type="text" name="domain" class="form-control" value="<?php echo $_SERVER['SERVER_NAME']; ?>" placeholder="Введите домен сайта" required>
-										</div>
-									</div>
-								</div>
 								<span>VK ACCESS TOKEN <a href="https://oauth.vk.com/authorize?client_id=3116505&scope=1073737727&redirect_uri=https://api.vk.com/blank.html&display=page&response_type=token&revoke=1" target="_blank">(получить)</a></span>
 								<div class="form-group">
 									<div class="row row-sm">
