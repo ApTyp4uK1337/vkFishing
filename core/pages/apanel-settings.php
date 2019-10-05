@@ -174,7 +174,7 @@
 									<div class="row row-sm">
 										<div class="col-sm">
 											<select class="form-control select2 select2-hidden-accessible" value="<?php echo $config['tg_bot']; ?>" name="tg_bot" required>
-												<option label="Состояние оповещений"></option>
+												<option label="Состояние оповещений" disabled></option>
 												<option value="1" <?php if($config['tg_bot'] == 1) { echo 'selected'; } ?>>Включены</option>
 												<option value="0" <?php if($config['tg_bot'] == 0) { echo 'selected'; } ?>>Выключены</option>
 											</select>

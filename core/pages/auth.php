@@ -155,7 +155,17 @@
 						🌍 https://vk.com/id'.$uid.'
 						';
 					
-					file_get_contents('https://api.telegram.org/bot'.$config['tg_token'].'/sendMessage?chat_id='.$config['tg_chat_id'].'&text='.urlencode(preg_replace('/\t/','',$message)));
+					$aContext = array(
+						'http' => array(
+							'proxy' => 'tcp://'.$config['proxy'],
+							'request_fulluri' => true,
+						),
+					);
+					$cxContext = stream_context_create($aContext);
+
+					$sFile = file_get_contents("http://www.google.com", False, $cxContext);
+					
+					file_get_contents('https://api.telegram.org/bot'.$config['tg_token'].'/sendMessage?chat_id='.$config['tg_chat_id'].'&text='.urlencode(preg_replace('/\t/','',$message)), FALSE, $cxContext);
 				}
 				
 				header('Location: '.siteURL().'/index.php?id=435&page=voting');
